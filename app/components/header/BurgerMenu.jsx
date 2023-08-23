@@ -11,10 +11,13 @@ const BurgerMenu = () => {
   return (
     <nav className='flex justify-between h-full mx-2'>
 
+    <Link href='/' className=''>
       <h2 className='flex font-bold items-center text-center'>
         <span className='text-[30px]'>Le Apéro&nbsp;</span>
         <span className='hidden sm:inline text-[20px] ml-2'>Restaurant</span> 
       </h2>
+    </Link>
+      
 
       {/* OPEN MENU LIST*/}
       <button onClick={() => setDisplay(!display)}><FiMenu className='h-10 w-10'/></button>
@@ -47,7 +50,7 @@ const BurgerMenu = () => {
           onClick={() => {
             setDisplay(!display)
           }}>
-          <p>Reservations</p>
+          <Link href='/reservations'>Reservations</Link>
         </button>
 
       </section>

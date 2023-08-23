@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaYelp } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className='flex flex-col lg:flex-row justify-between items-center bg-secondary-color text-main-color min-h-[200px] mt-[200px]'>
+    <footer className='flex flex-col lg:flex-row justify-between items-center bg-secondary-color text-main-color min-h-[200px]'>
 
       <Link href='#home' className='w-full lg:w-[20%]'>
         <h2 className='flex flex-col justify-center text-[25px] font-bold text-center'>

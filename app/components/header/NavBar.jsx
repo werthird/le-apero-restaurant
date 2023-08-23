@@ -28,7 +28,7 @@ const NavBar = () => {
         <li className='mx-2 px-6 py-[3px] hover:bg-accent-color transition'><Link href='#contact'>Contact</Link></li>
       </ul>
 
-      <Link href='#home' className='w-[20%]'>
+      <Link href='/' className='w-[20%]'>
         <h2 className='flex flex-col justify-center text-[25px] font-bold text-center'>
           <span className='text-[30px]'>Le Apéro</span>
           <span className='text-[20px]'>Restaurant</span> 
@@ -41,7 +41,7 @@ const NavBar = () => {
           <Link href='tel:5551234567'><BsFillTelephoneOutboundFill className='w-[20px] h-[20px]'/></Link>
         </li>
         <li className='mx-2 px-4 py-[1px] bg-secondary-color text-main-color border border-secondary-color hover:bg-main-color hover:text-secondary-color transition'>
-          <Link href='/' className=''>Reservations</Link>
+          <Link href='/reservations' className=''>Reservations</Link>
         </li>
       </ul>
     </nav>
