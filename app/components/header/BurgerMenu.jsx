@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { AiFillCloseCircle } from 'react-icons/ai';
+import { BsFillTelephoneOutboundFill } from 'react-icons/bs';
 import { FiMenu } from 'react-icons/fi';
 
 const BurgerMenu = () => {
@@ -31,16 +32,18 @@ const BurgerMenu = () => {
           </button>
         </div>
         
-
         <div className='flex flex-col text-[26px] mt-[8px] ml-[10px] p-2'>
-          <Link href={'../category/men'} className='py-2 font-semibold' onClick={() => setDisplay(!display)}>Menu</Link>
-          <Link href={'../category/women'} className='py-2 font-semibold' onClick={() => setDisplay(!display)}>About</Link>
-          <Link href={'../category/kids'} className='py-2 font-semibold' onClick={() => setDisplay(!display)}>Contact</Link>
+          <Link href='tel:5551234567' className='flex items-center py-2 font-semibold'>
+            <BsFillTelephoneOutboundFill className='w-6 h-6 mr-4'/> Call Us
+          </Link>
+          <Link href='#menu' className='py-2 font-semibold' onClick={() => setDisplay(!display)}>Menu</Link>
+          <Link href='#about' className='py-2 font-semibold' onClick={() => setDisplay(!display)}>About</Link>
+          <Link href='#contact' className='py-2 font-semibold' onClick={() => setDisplay(!display)}>Contact</Link>
         </div>
 
         <button 
           type='button'
-          className='flex text-[26px] mt-20' 
+          className='flex text-[26px] mt-20 bg-secondary-color text-main-color px-2' 
           onClick={() => {
             setDisplay(!display)
           }}>
