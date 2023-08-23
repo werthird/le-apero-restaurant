@@ -18,7 +18,7 @@ const Footer = () => {
         <Link href='#review'>Reviews</Link>
         <Link href='#question'>Questions</Link>
         <Link href='#contact'>Contact</Link>
-        <Link href='#menu'>Menu</Link>
+        <Link href='./menu'>Menu</Link>
         <Link href='#reservations'>Reservations</Link>
       </nav>
 

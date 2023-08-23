@@ -24,7 +24,7 @@ const NavBar = () => {
 
       <ul className='flex w-[40%] text-[18px]'>
         <li className='mx-2 px-6 py-[3px] hover:bg-accent-color transition'><Link href='#about'>About</Link></li>
-        <li className='mx-2 px-6 py-[3px] hover:bg-accent-color transition'><Link href='#menu'>Menu</Link></li>
+        <li className='mx-2 px-6 py-[3px] hover:bg-accent-color transition'><Link href='./menu'>Menu</Link></li>
         <li className='mx-2 px-6 py-[3px] hover:bg-accent-color transition'><Link href='#contact'>Contact</Link></li>
       </ul>
 

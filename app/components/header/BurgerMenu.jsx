@@ -36,7 +36,7 @@ const BurgerMenu = () => {
           <Link href='tel:5551234567' className='flex items-center py-2 font-semibold'>
             <BsFillTelephoneOutboundFill className='w-6 h-6 mr-4'/> Call Us
           </Link>
-          <Link href='#menu' className='py-2 font-semibold' onClick={() => setDisplay(!display)}>Menu</Link>
+          <Link href='./menu' className='py-2 font-semibold' onClick={() => setDisplay(!display)}>Menu</Link>
           <Link href='#about' className='py-2 font-semibold' onClick={() => setDisplay(!display)}>About</Link>
           <Link href='#contact' className='py-2 font-semibold' onClick={() => setDisplay(!display)}>Contact</Link>
         </div>

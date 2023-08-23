@@ -9,7 +9,7 @@ const ProdBanContent = () => {
       
       <p className='lg:text-[20px] bg-secondary-color/80 px-6 rounded text-center'>Checkout our Oven Baked Sweet Potato Dish</p>
 
-      <Link href='/'>
+      <Link href='./menu'>
         <button className='mt-2 
         sm:mt-10 lg:mt-20 bg-main-color text-secondary-color border border-main-color px-6 py-[3px] text-[30px] uppercase rounded-sm hover:bg-secondary-color hover:text-main-color transition'>
           Menu
