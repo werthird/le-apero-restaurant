@@ -1,6 +1,8 @@
 'use client';
+import Link from 'next/link';
 import React from 'react';
 import toast from 'react-hot-toast';
+import { AiFillCloseCircle } from 'react-icons/ai';
 
 const ReservForm = () => {
   
@@ -11,11 +13,16 @@ const ReservForm = () => {
 
   return (
     <section className='flex justify-center bg-black/75 py-[100px]'>
-      <div className='flex justify-center w-full sm:w-[80%] h-[100%] bg-main-color py-[20px]'>
+
+      <div className='flex justify-center w-full sm:w-[80%] h-[100%] bg-main-color py-[20px] relative'>
+
+        <Link href='/' className='absolute top-4 right-4'>
+          <AiFillCloseCircle className='h-8 w-8' />
+        </Link>
 
         <form className='flex flex-col sm:flex-row flex-wrap px-4 sm:px-0 justify-between w-full lg:w-[500px]'>
 
-          <h2 className='w-full text-[50px] font-bold text-center mb-4'>Reservations</h2>
+          <h2 className='w-full text-[40px] lg:text-[50px] font-bold text-center my-4'>Reservations</h2>
 
           <div className='flex flex-col w-full sm:w-[48%]'>
             <label htmlFor='date'>Date: *</label>
