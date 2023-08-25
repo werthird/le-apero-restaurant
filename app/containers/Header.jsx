@@ -22,7 +22,7 @@ const Header = () => {
   };
 
   const headerBackground = {
-    visible: { opacity: 1, scale: 1, transition:{duration: 2, ease: 'easeInOut'} },
+    visible: { opacity: 1, scale: 1, transition:{duration: 1.5, ease: 'easeInOut'} },
     hidden: { opacity: 0, scale: 0 }
   }
 
@@ -41,22 +41,21 @@ const Header = () => {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  });
 
 
 
   return (
-    <header className='z-20 w-full h-[55px] lg:h-[70px] border-b-2 border-black fixed top-0'>
-      <motion.div
-        variants={headerBackground}
-        animate={isScrolled ? 'visible' : 'hidden'}
-        initial='hidden'
-        className='absolute -z-10 top-0 w-full h-full bg-main-color'>
-      </motion.div>
+    <motion.header 
+      variants={headerBackground}
+      animate={isScrolled ? 'visible' : 'hidden'}
+      initial='hidden'
+      className='z-20 w-full h-[55px] lg:h-[70px] border-b-2 border-black fixed top-0 bg-main-color'>
+      {/* <div className='absolute -z-10 top-0 w-full h-full bg-main-color'></div> */}
 
       {width < breakpoint ? <BurgerMenu /> : <NavBar />}
 
-    </header>
+    </motion.header>
   )
 };
 
