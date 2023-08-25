@@ -1,6 +1,14 @@
+'use client';
 import React from 'react';
+import toast from 'react-hot-toast';
 
 const ContactForm = () => {
+
+  function contSucess(e) {
+    e.preventDefault();
+    toast.success('Contact Form Sent');
+  }
+
   return (
     <form className='flex flex-col w-full lg:w-[500px]'>
       <h2 className='hidden lg:inline text-[20px] font-bold self-center'>Contact Form</h2>
@@ -26,7 +34,8 @@ const ContactForm = () => {
       </div>
 
       <div className='self-center'>
-        <button className='bg-secondary-color text-main-color border border-secondary-color px-6 py-[3px] text-[20px] uppercase rounded-sm hover:bg-main-color hover:text-secondary-color transition'>
+        <button type='submit' className='bg-secondary-color text-main-color border border-secondary-color px-6 py-[3px] text-[20px] uppercase rounded-sm hover:bg-main-color hover:text-secondary-color transition'
+          onClick={contSucess}>
           Submit
         </button>
       </div>

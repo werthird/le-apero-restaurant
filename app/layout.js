@@ -1,6 +1,6 @@
 import './css/globals.css';
 // import '../public/js/script';
-
+import { Toaster } from 'react-hot-toast';
 import { Inknut_Antiqua } from 'next/font/google';
 import Header from './containers/Header';
 import Footer from './containers/Footer';
@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
         <Header />
           {children}
         <Footer />
+        <Toaster position='top-center'/>
       </body>
     </html>
   )

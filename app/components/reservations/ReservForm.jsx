@@ -1,6 +1,14 @@
+'use client';
 import React from 'react';
+import toast from 'react-hot-toast';
 
 const ReservForm = () => {
+  
+  function resSucess(e) {
+    e.preventDefault();
+    toast.success('Reservation Request Sent');
+  }
+
   return (
     <section className='flex justify-center bg-black/75 py-[100px]'>
       <div className='flex justify-center w-full sm:w-[80%] h-[100%] bg-main-color py-[20px]'>
@@ -75,11 +83,12 @@ const ReservForm = () => {
 
           <div className='w-full'>
             <label htmlFor='comments'>Comments<span className='text-[12px]'>(optional)</span>:</label>
-            <textarea name='comments' id='comments' className='w-full pl-2 pt-2 text-[12px] rounded' rows='3' required></textarea>
+            <textarea name='comments' id='comments' className='w-full pl-2 pt-2 text-[12px] rounded' rows='3'></textarea>
           </div>
 
           <div className='mt-4'>
-            <button className='bg-secondary-color text-main-color border border-secondary-color px-6 py-[3px] text-[20px] uppercase rounded-sm hover:bg-main-color hover:text-secondary-color transition'>
+            <button type='submit' className='bg-secondary-color text-main-color border border-secondary-color px-6 py-[3px] text-[20px] uppercase rounded-sm hover:bg-main-color hover:text-secondary-color transition'
+              onClick={resSucess}>
               Submit
             </button>
           </div>
